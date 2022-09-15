@@ -2,5 +2,6 @@
 #define MAIN_H
 
 int -putchar(char c);
+int _isdigit(int c);
 
 #endif
