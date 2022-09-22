@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - adds one line of code to print 98 followed by new line
+ *
+ * Return: Always (0)
+ */
 int main(void)
 {
 	int n;
@@ -10,7 +15,7 @@ int main(void)
 	p = &n;
 	/*
 	 * write your line of code here...
-	 * main - entry point
+	 * Remember:
 	 * - you are not allowed to use a
 	 * - you are not allowed to mofify p
 	 * - only one statement
