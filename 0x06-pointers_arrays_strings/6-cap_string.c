@@ -21,7 +21,7 @@ char *cap_string(char *s)
 			s[0] = s[0] - 32;
 		}
 		if (s[count] == ' ' || s[count] == '\t' || s[count] == '\n'
-				|| s[count] == ',' || s[count] == ',' || s[count] == ','
+				|| s[count] == ',' || s[count] == ';' || s[count] == ','
 				|| s[count] == ',' || s[count] == '!' || s[count] == '?'
 				|| s[count] == '"' || s[count] == '(' || s[count] == ')'
 				|| s[count] == '{' || s[count] == '}')
@@ -35,5 +35,3 @@ char *cap_string(char *s)
 	}
 	return (s);
 }
-
-
