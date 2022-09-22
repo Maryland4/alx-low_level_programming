@@ -37,7 +37,7 @@ void print_buffer(char *b, int size)
 			{
 				if ((j + i) > size - 1)
 					break;
-				if (b[j + i] <= 31 || b[j + i] >= '-')
+				if (b[j + i] <= 31 || b[j + 1] >= '~')
 					b[j + i] = '.';
 				putchar(b[j + i]);
 				j++;
