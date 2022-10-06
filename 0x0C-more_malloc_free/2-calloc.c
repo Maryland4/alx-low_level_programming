@@ -6,19 +6,20 @@
  * @nmemb: number of elements in the array
  * @size: size of each element
  *
- * Return: pointer to the allocated memory
+ * Return: NULL if nmemb, 0 if malloc fails
  */
 void *_calloc(unsigned int nmemb, unsigned int size);
 {
-	char *p;
-	unsigned int i;
+	unsigned int nb, i;
+	char *a, *b;
 
-	if (nmemb == 0 || size == 0)
+	if ((nmemb || size) == 0)
 		return (NULL);
-	p = malloc(nmemb * size);
-	if (p == NULL)
+	nb = nmemb * size;
+	a = b = malloc(nb);
+	if (a == NULL)
 		return (NULL);
-	for (i = 0; i < (nmemb * size); i++)
-		p[i] = 0;
-	return (p);
+	for (i = 0; i < nb; i++)
+		*a++ = 0;
+	return (b);
 }
