@@ -18,7 +18,7 @@ int is_digit(char *s)
 			return (0);
 		i++;
 	}
-	return (i);
+	return (1);
 }
 
 /**
@@ -51,11 +51,12 @@ void errors(void)
  * main - multiplies two positive numbers
  * @argc: numbers of argument
  * @argv: arrays of argument
+ *
  * Return: Always 0 success
  */
 int main(int argc, char *argv[])
 {
-	char *s1; *s2;
+	char *s1, *s2;
 	int len1, len2, len, i, carry, digit1, digit2, *result, a = 0;
 
 	s1 = argv[1], s2 = argv[2];
